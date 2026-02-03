@@ -22,7 +22,7 @@ jobs:
         uses: Azure/functions-action@v1
         with:
           app-name: "oprations02"
-          package: "."
+          package: "./opsfunc"   # 🔥 THIS IS THE FIX
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
